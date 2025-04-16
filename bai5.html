@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="slideshow-container">
+        <div class="slide">
+          <img src="./download (5).jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="./download (6).jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="./download (7).jpg" alt="">
+        </div>
+    
+        
+        <button class="nav-btn prev" onclick="nextSlide()">❮</button>
+        <button class="nav-btn next" onclick="prevSlide()">❯</button>
+      </div>
+      <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll(".slide");
+    
+        function showSlide(index) {
+          slides.forEach(slide => slide.style.display = "none");
+          slides[index].style.display = "block";
+        }
+    
+        function nextSlide() {
+          currentSlide = (currentSlide + 1) % slides.length;
+          showSlide(currentSlide);
+        }
+    
+        function prevSlide() {
+          currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+          showSlide(currentSlide);
+        }
+    
+
+        showSlide(currentSlide);
+      </script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .demo{
+            border: solid 1px;
+         
+        }
+        table{
+            margin:auto;
+        }
+        a{
+            text-decoration: none;
+            
+        }
+        
+
+    </style>
+</head>
+<body>
+    <table style="width: 70vw; ">
+        <tr>
+            <td style="border: solid 1px red;text-align: center; "><a href="./index.html">BÀI 4</a></td>
+            <td style="border: solid 1px red;text-align: center;"><a href="./bai5.html">BÀI 5</a></td>
+            <td style="border: solid 1px red;text-align: center;"><a href="./bai6,1.html">BÀI 6</a></td>
+        </tr>
+    </table>
+    <div class="demo">
+    <h1 style="color: blueviolet; font-size: xx-large; text-align: center;" >Form đăng ký
+    </h1>
+    <form onsubmit="return validateForm();">
+    
+    <table>
+        <tr>
+            <td>Họ:</td>
+            
+            <td><input type="text" name="" id="ho" ></td>
+            <td><span id="hotb"></span></td>
+        </tr>
+        <tr>
+            <td>Tên:</td>
+            <td><input type="text" id="ten"></td>
+        </tr>
+        <tr>
+            <td>Ngày sinh:</td>
+            <td>Ngày <input type="number" name="" id="" style="width: 25px;"> Tháng <input type="number" name="" id="" style="width: 25px;"> Năm <input type="number" name="" id="" style="width: 50px;"></td>
+        </tr>
+        <tr>
+            <td>Gioi tính :</td>
+            <td><input type="radio" name="" id="">Nam <input type="radio" name="" id="">Nữ </td>
+        </tr>
+        <tr>
+            <td>Số điện thoại:</td>
+            <td><input type="text" id="sdt"></td>
+        </tr>
+        <tr>
+            <td>Sở thích:</td>
+            <td><input type="checkbox" name="" id="" >Đọc sách<input type="checkbox" name="" id="" >Xem phim<input type="checkbox" name="" id="" >Nghe nhạc<input type="checkbox" name="" id="" >Đá bóng</td>
+        </tr>
+        <tr>
+            <td>Khác:</td>
+            <td><textarea name="" id="" rows="3"></textarea></td>
+        </tr>
+        <tr>
+            <td><input type="submit"><input type="reset"></td>
+           
+        </tr>
+    </table>
+</form>
+
+</div>
+<script src="./main.js"></script>
+</body>
+</html>
